@@ -11,6 +11,8 @@ frames in between.
 Upload a clip, pick a mode, and download the result. You can run it in your
 browser with Google Colab — no coding needed.
 
+> 🛠️ **Still a work in progress:** DFR is continuously being developed, and results aren't perfect yet. It may miss some held frames or remove movement you wanted to keep, so give your output a quick watch before using it in an edit.
+
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/XYETHER/Anime_DeadFramesRemover-DFR/blob/main/DFR_Colab.ipynb)
 
 [📥 Download the notebook & examples](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/releases/latest)
