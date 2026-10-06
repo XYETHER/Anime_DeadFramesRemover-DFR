@@ -11,44 +11,45 @@ between those frames.
 
 ## See it in action
 
-All four examples use the same user-supplied Gojo clip and were generated on a
+All four examples use the same user-supplied Inumaki clip (`inumaki2.mp4`), generated on a
 **Tesla T4**. Click a preview to open its MP4. GIFs are reduced-size previews;
 the public MP4s are compact **960 × 540** web previews. DFR and RIFE were
 processed at the input's 1920 × 1080 resolution before resizing for publication.
 
 | Input clip | Depth map results |
 | --- | --- |
-| [![Input clip](assets/input.gif)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/input.mp4) | [![Depth map results](assets/depth.gif)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/depth.mp4) |
+| [![Input clip](assets/input.gif?v=inumaki2)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/input.mp4?v=inumaki2) | [![Depth map results](assets/depth.gif?v=inumaki2)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/depth.mp4?v=inumaki2) |
 | Original timing. | Relative depth, visualized with warm colors for nearer regions. |
 
 | Input + interpolation | Dead frames removed + interpolation |
 | --- | --- |
-| [![Input plus interpolation](assets/input-interpolated.gif)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/input-interpolated.mp4) | [![DFR plus interpolation](assets/dfr-interpolated.gif)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/dfr-interpolated.mp4) |
+| [![Input plus interpolation](assets/input-interpolated.gif?v=inumaki2)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/input-interpolated.mp4?v=inumaki2) | [![DFR plus interpolation](assets/dfr-interpolated.gif?v=inumaki2)](https://github.com/XYETHER/Anime_DeadFramesRemover-DFR/raw/refs/heads/main/assets/dfr-interpolated.mp4?v=inumaki2) |
 | RIFE v4.26, 8×, played at 60 FPS. | DFR Type 1 → RIFE v4.26, 8×, played at 60 FPS. |
 
 Both interpolation previews intentionally use slowed playback. They have
 different durations because DFR removes frames and retimes the retained frames
 to 23.976 FPS. They are not a synchronized comparison at the original timing.
-All demo MP4s are silent. GIFs show the first four seconds at 12 FPS.
+All demo MP4s are silent. GIFs show up to the first four seconds at 12 FPS (the full clip when shorter).
 [DFR output before interpolation](assets/dfr.mp4).
 
 | MP4 | Frames | Playback FPS | Duration |
 | --- | ---: | ---: | ---: |
-| Input | 256 | ~60 | 4.27 s |
-| Depth maps | 256 | 60 | 4.27 s |
-| Input + RIFE | 2,041 | 60 | 34.02 s |
-| DFR + RIFE | 673 | 60 | 11.22 s |
+| Input | 19 | 23.976 | 0.79 s |
+| Depth maps | 19 | 23.976 | 0.79 s |
+| Input + RIFE | 145 | 60.000 | 2.42 s |
+| DFR + RIFE | 49 | 60.000 | 0.82 s |
 
 ## What the example shows
 
-The source has **256 frames at approximately 60 FPS**. Type 1 analyses every
-third frame: **86 frames analysed, 85 retained**. Of the 171 removed frames,
-**170 were skipped before analysis and one was classified as held**.
-This is a demonstration of the pipeline, not a benchmark of duplicate-detection
-accuracy. The [decision CSV](assets/decisions.csv) records every source frame;
-the [T4 report](assets/report.json) includes settings, timings and video metadata.
+The source has **19 frames at 23.976 FPS**. Type 1 analyses every
+third frame: **7 frames analysed, 7 retained**. Of the 12 removed frames,
+**All 12 were skipped before analysis; none of the sampled frames was classified as held**.
+This short example demonstrates the pipeline; it is not a benchmark of
+duplicate-detection accuracy. The [decision CSV](assets/decisions.csv) records
+every source frame; the [T4 report](assets/report.json) includes settings,
+timings, source checksum and video metadata.
 
-![Original pixels, estimated depth and attention regions](assets/depth-attention.jpg)
+![Original pixels, estimated depth and attention regions](assets/depth-attention.jpg?v=inumaki2)
 
 Left: input. Middle: estimated relative depth. Right: the region used for
 motion checks. The dimmed background is only an explanation image; DFR's

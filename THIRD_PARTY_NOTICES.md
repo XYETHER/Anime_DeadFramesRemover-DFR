@@ -18,7 +18,7 @@ The public demo uses RIFE v4.26. The notebook also offers v4.18 and v4.22.
 Upstream RIFE weights are downloaded from the linked Google Drive files;
 they are not bundled or checksum-pinned by this project.
 
-The example is a short **Jujutsu Kaisen / Gojo** clip supplied by xyether.
+The example is a short **Jujutsu Kaisen / Inumaki** clip supplied by xyether.
 The underlying anime belongs to its respective rights holders. These preview
 images and videos demonstrate processing and are excluded from the code license.
 No ownership of the anime is claimed. Use footage you have permission to process

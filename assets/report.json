@@ -1,10 +1,10 @@
 {
   "name": "input.mp4",
-  "input_frames": 256,
-  "kept_frames": 85,
-  "analysis_seconds": 9.655671888999677,
-  "analysis_fps": 26.512914165160336,
-  "depth_calls": 86,
+  "input_frames": 19,
+  "kept_frames": 7,
+  "analysis_seconds": 1.2781204419998176,
+  "analysis_fps": 14.865578685426199,
+  "depth_calls": 7,
   "fallback_frames": 1,
   "vfr_detected": false,
   "cuts": [],
@@ -13,83 +13,78 @@
   "width": 1920,
   "height": 1080,
   "stage_seconds": {
-    "decode_s": 1.4040625299976455,
-    "resize_s": 0.5933040869990691,
-    "depth_s": 5.513263393001125,
-    "foreground_s": 0.641220642000917,
-    "decision_s": 1.484832059999917
+    "decode_s": 0.27161130000013145,
+    "resize_s": 0.050508780000200204,
+    "depth_s": 0.7999036669993984,
+    "foreground_s": 0.04854575100034708,
+    "decision_s": 0.10462733599888452
   },
   "analysis_size": [
     640,
     360
   ],
   "frame_step": 3,
-  "analysed_frames": 86,
-  "output_frames": 85,
+  "analysed_frames": 7,
+  "output_frames": 7,
   "output_fps": "24000/1001",
-  "output_duration": 3.545208333333333,
-  "encode_seconds": 4.5865783010003724,
+  "output_duration": 0.2919583333333333,
+  "encode_seconds": 1.6463061439999365,
   "encoder": "h264_nvenc",
   "verified": true,
   "processing_type": "Type 1",
-  "total_seconds": 16.405880774000252,
-  "full_pipeline_fps": 15.604160698626083,
+  "total_seconds": 3.8736091109999506,
+  "full_pipeline_fps": 4.904986397839005,
   "depth_quality": "Balanced",
   "depth_model": "Depth Anything V2 Small",
-  "depth_preview_frames": 256,
-  "input-interpolated_seconds": 210.62671700400006,
-  "dfr-interpolated_seconds": 71.08493998499989,
+  "depth_preview_frames": 19,
+  "input-interpolated_seconds": 19.009955937000086,
+  "dfr-interpolated_seconds": 10.529473048,
   "rife_model": "v4.26",
   "interpolation_factor": 8,
   "interpolation_playback_fps": 60,
   "runtime_gpu": "Tesla T4",
-  "gif_preview": {
-    "width": 360,
-    "height": 202,
-    "fps": 12,
-    "max_duration_seconds": 4,
-    "excerpt": "first four seconds"
-  },
+  "example_source": "inumaki2.mp4",
+  "source_sha256": "51c174c3b1a63384a1eb37b021c21b2fd4cb033275f5e89c60e330874651444d",
   "full_resolution_media": {
     "input-interpolated.mp4": {
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "avg_frame_rate": "60/1",
-      "nb_read_frames": "2041",
-      "duration": "34.016667"
+      "nb_read_frames": "145",
+      "duration": "2.416667"
     },
     "dfr.mp4": {
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "avg_frame_rate": "24000/1001",
-      "nb_read_frames": "85",
-      "duration": "3.545208"
+      "nb_read_frames": "7",
+      "duration": "0.291958"
     },
     "dfr-interpolated.mp4": {
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "avg_frame_rate": "60/1",
-      "nb_read_frames": "673",
-      "duration": "11.216667"
+      "nb_read_frames": "49",
+      "duration": "0.816667"
     },
     "depth.mp4": {
       "codec_name": "h264",
       "width": 640,
       "height": 360,
-      "avg_frame_rate": "60/1",
-      "nb_read_frames": "256",
-      "duration": "4.266667"
+      "avg_frame_rate": "24000/1001",
+      "nb_read_frames": "19",
+      "duration": "0.792458"
     },
     "input.mp4": {
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
-      "avg_frame_rate": "128000000/2133333",
-      "nb_read_frames": "256",
-      "duration": "4.266666"
+      "avg_frame_rate": "24000/1001",
+      "nb_read_frames": "19",
+      "duration": "0.792458"
     }
   },
   "preview_media": {
@@ -97,41 +92,48 @@
       "codec_name": "h264",
       "width": 960,
       "height": 540,
-      "avg_frame_rate": "60/1",
-      "nb_read_frames": "256",
-      "duration": "4.266667"
+      "avg_frame_rate": "24000/1001",
+      "nb_read_frames": "19",
+      "duration": "0.792458"
     },
     "depth.mp4": {
       "codec_name": "h264",
       "width": 960,
       "height": 540,
-      "avg_frame_rate": "60/1",
-      "nb_read_frames": "256",
-      "duration": "4.266667"
+      "avg_frame_rate": "24000/1001",
+      "nb_read_frames": "19",
+      "duration": "0.792458"
     },
     "input-interpolated.mp4": {
       "codec_name": "h264",
       "width": 960,
       "height": 540,
       "avg_frame_rate": "60/1",
-      "nb_read_frames": "2041",
-      "duration": "34.016667"
+      "nb_read_frames": "145",
+      "duration": "2.416667"
     },
     "dfr-interpolated.mp4": {
       "codec_name": "h264",
       "width": 960,
       "height": 540,
       "avg_frame_rate": "60/1",
-      "nb_read_frames": "673",
-      "duration": "11.216667"
+      "nb_read_frames": "49",
+      "duration": "0.816667"
     },
     "dfr.mp4": {
       "codec_name": "h264",
       "width": 960,
       "height": 540,
       "avg_frame_rate": "24000/1001",
-      "nb_read_frames": "85",
-      "duration": "3.545208"
+      "nb_read_frames": "7",
+      "duration": "0.291958"
     }
+  },
+  "gif_preview": {
+    "width": 360,
+    "height": 202,
+    "fps": 12,
+    "max_duration_seconds": 4,
+    "excerpt": "first four seconds or full clip when shorter"
   }
 }
